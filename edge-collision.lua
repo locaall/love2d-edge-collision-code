@@ -6,8 +6,8 @@ function love.load()
     Player = {
         x = 100,
         y = 100,
-        height = 25,
-        width = 100,
+        height = 50,
+        width = 50,
         Xspeed = 100,
         Yspeed = 100
     }
