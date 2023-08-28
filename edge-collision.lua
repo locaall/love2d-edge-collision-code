@@ -1,6 +1,6 @@
--- Default window dimensions --
-WIN_HEIGHT = 600
-WIN_WIDTH = 800
+-- Get the default window dimensions --
+WIN_HEIGHT = love.graphics.getDimensions()
+WIN_WIDTH = love.graphics.getDimensions()
 
 function love.load()
     -- Create a player and add its attributes --
