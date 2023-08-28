@@ -17,8 +17,9 @@ function love.update(dt)
     -- Update the player each frame --
     Player.x = Player.x + (Player.Xspeed * dt)
     Player.y = Player.y + (Player.Yspeed * dt)
-  
-    detectCollision() -- Check edge collision on each frame --
+
+    -- Check edge collision on each frame --
+    detectCollision()
 end
 
 function love.draw()
@@ -29,10 +30,12 @@ end
 -- Detect an edge collision --
 function detectCollision()
     if (Player.x < 0 or Player.x > WIN_WIDTH - Player.width) then
-        Player.Xspeed = Player.Xspeed * -1 -- Rotate the direction of player --
+        -- Rotate the direction of player --
+        Player.Xspeed = Player.Xspeed * -1 
     end
 
     if (Player.y < 0 or Player.y > WIN_HEIGHT - Player.height) then
-        Player.Yspeed = Player.Yspeed * -1 -- Rotate the direction of player --
+         -- Rotate the direction of player --
+        Player.Yspeed = Player.Yspeed * -1
     end
 end
